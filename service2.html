@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Tests et bilans cognitifs - Lucie International Neuroscience" />
+  <meta name="keywords" content="tests cognitifs, bilan, mémoire, attention, neuroscience" />
+  <meta name="author" content="Lucie International Neuroscience" />
+  <meta name="theme-color" content="#3b82f6" />
+
+  <title>Tests et Bilans Cognitifs - Lucie International Neuroscience</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Language switcher -->
+  <style>
+    .language-switcher {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      margin: 0.5rem;
+    }
+    .lang-btn {
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      padding: 0.25rem 0.5rem;
+      font-weight: bold;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      color: #333;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .lang-btn svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+    .lang-btn.active, .lang-btn:hover {
+      background-color: #1e40af;
+      color: white;
+    }
+  </style>
+  <div class="language-switcher" role="group" aria-label="Language switcher">
+    <button onclick="switchLanguage('fr')" class="lang-btn active" data-lang="fr" aria-pressed="true" aria-label="Français">
+      <svg viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <rect width="213.3" height="480" fill="#0055A4"/>
+        <rect x="213.3" width="213.3" height="480" fill="#FFFFFF"/>
+        <rect x="426.6" width="213.4" height="480" fill="#EF4135"/>
+      </svg>
+      FR
+    </button>
+    <button onclick="switchLanguage('en')" class="lang-btn" data-lang="en" aria-pressed="false" aria-label="English">
+      <svg viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <rect width="640" height="480" fill="#012169"/>
+        <path fill="#FFF" d="M0 0l640 480M640 0L0 480" stroke-width="60"/>
+        <path fill="#C8102E" d="M0 0l640 480M640 0L0 480" stroke-width="40"/>
+        <path fill="#FFF" d="M320 0v480M0 240h640" stroke-width="80"/>
+        <path fill="#C8102E" d="M320 0v480M0 240h640" stroke-width="50"/>
+      </svg>
+      EN
+    </button>
+  </div>
+
+  <nav role="navigation" aria-label="Navigation principale">
+    <img src="images/logo.jpg" alt="Logo Lucie International Neuroscience" class="logo">
+    <a href="index.html" id="nav-accueil">Accueil</a>
+    <a href="index.html#services-section" id="nav-services" class="active">Services</a>
+    <a href="index.html#bilan-section" id="nav-bilan">Bilan</a>
+    <a href="index.html#temoignages-section" id="nav-temoignages">Témoignages</a>
+    <a href="index.html#apropos-section" id="nav-apropos">À propos</a>
+    <a href="index.html#contact-section" id="nav-contact">Contact</a>
+  </nav>
+
+  <main id="main-content">
+    <section class="service-detail">
+      <div class="service-header">
+        <a href="index.html#services-section" class="btn-back"><i class="fas fa-arrow-left"></i> <span data-translation="service2.back">Retour aux services</span></a>
+        <h1 data-translation="service2.title">Tests et Bilans Cognitifs</h1>
+      </div>
+
+      <div class="service-content">
+        <div class="service-image">
+          <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80" alt="Tests cognitifs" />
+        </div>
+
+        <div class="service-description">
+          <h2 data-translation="service2.description">Évaluation Complète de Vos Capacités Cognitives</h2>
+          <p data-translation="service2.description">Nos tests cognitifs permettent d'évaluer précisément vos fonctions mentales : mémoire, attention, langage, raisonnement et fonctions exécutives. Un bilan complet pour mieux comprendre vos forces et axes d'amélioration.</p>
+
+          <h3 data-translation="service2.includes">Types de tests proposés :</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> <span data-translation="service2.item1">Tests de mémoire (épisodique, sémantique, de travail)</span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-translation="service2.item2">Évaluation de l'attention et de la concentration</span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-translation="service2.item3">Tests de langage et de communication</span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-translation="service2.item4">Bilans des fonctions exécutives</span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-translation="service2.item5">Évaluation des capacités visuospatiales</span></li>
+          </ul>
+
+          <h3 data-translation="service2.advantages">Avantages :</h3>
+          <ul>
+            <li><i class="fas fa-chart-line"></i> <span data-translation="service2.adv1">Résultats détaillés et interprétation personnalisée</span></li>
+            <li><i class="fas fa-clock"></i> <span data-translation="service2.adv2">Durée adaptée (1h à 2h selon le bilan)</span></li>
+            <li><i class="fas fa-brain"></i> <span data-translation="service2.adv3">Outils validés scientifiquement</span></li>
+            <li><i class="fas fa-file-alt"></i> <span data-translation="service2.adv4">Rapport complet avec recommandations</span></li>
+          </ul>
+
+          <div class="service-cta">
+            <a href="index.html#contact-section" class="btn-cta primary" data-translation="service2.cta1">Réserver un test</a>
+            <a href="index.html#bilan-section" class="btn-cta secondary" data-translation="service2.cta2">Bilan d'auto-évaluation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p><i class="fas fa-phone"></i> +229 01 96 96 4648</p>
+        <p><i class="fas fa-envelope"></i> contact@neurologue.com</p>
+      </div>
+      <div class="footer-section">
+        <h4>Adresse</h4>
+        <p>Lucie International Neuroscience<br>123 Avenue de la Santé<br>75000 Paris, France</p>
+      </div>
+      <div class="footer-section">
+        <h4>Suivez-nous</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Lucie International Neuroscience. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="translations.js"></script>
+  <script src="nav.js"></script>
+</body>
+</html>
