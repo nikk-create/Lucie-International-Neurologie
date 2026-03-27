@@ -1,814 +1,364 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Cabinet Lucie International - Coaching & Neurosciences Appliquées avec Dr. Hermann Degla" />
-  <meta name="keywords" content="coaching, neurosciences, développement personnel, stress, mémoire, concentration, Dr Hermann Degla" />
-  <meta name="author" content="Cabinet Lucie International" />
-  <meta name="theme-color" content="#1e40af" />
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Cabinet Lucie International" />
-  <meta property="og:description" content="Coaching et neurosciences appliquées pour améliorer votre cerveau et transformer votre vie" />
-  <meta property="og:locale" content="fr_FR" />
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:title" content="Cabinet Lucie International" />
-  <meta property="twitter:description" content="Coaching et neurosciences appliquées pour améliorer votre cerveau et transformer votre vie" />
-
-  <!-- Font Awesome for icons -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cabinet Lucie International — Coaching & Neurosciences Appliquées</title>
+  <meta name="description" content="Dr. Hermann Degla — Expert en Neurosciences Appliquées. Coaching individuel, scolaire, entreprise. Neuro-Synchronisateur. Transformez votre vie.">
+  <meta name="keywords" content="coaching neurosciences, neurosciences appliquées, Dr Hermann Degla, Neuro-Synchronisateur, coaching stress, mémoire concentration, Cabinet Lucie International, Bénin">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <title>Cabinet Lucie International</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Skip link pour l'accessibilité -->
-  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
 
-  <!-- Language switcher -->
-  <div class="language-switcher">
-    <button onclick="switchLanguage('fr')" class="lang-btn active" data-lang="fr">FR</button>
-    <button onclick="switchLanguage('en')" class="lang-btn" data-lang="en">EN</button>
-  </div>
-
-  <nav role="navigation" aria-label="Navigation principale">
-    <img src="images/logo.jpg" alt="Logo Cabinet Lucie International" class="logo">
-    <button id="nav-accueil" class="active" aria-label="Aller à la section Accueil" aria-current="page">Accueil</button>
-    <button id="nav-apropos" aria-label="Aller à la section À propos">À propos</button>
-    <button id="nav-services" aria-label="Aller à la section Services">Services</button>
-    <button id="nav-neuro-synchronisateur" aria-label="Aller à la section Neuro-Synchronisateur">Neuro-Synchronisateur</button>
-    <button id="nav-ressources" aria-label="Aller à la section Ressources">Ressources</button>
-    <button id="nav-actualites" aria-label="Aller à la section Actualités">Actualités</button>
-    <button id="nav-rendezvous" aria-label="Aller à la section Rendez-vous">Rendez-vous</button>
-    <button id="nav-contact" aria-label="Aller à la section Contact">Contact</button>
-    <button id="nav-espace-client" aria-label="Aller à la section Espace Client">Espace Client</button>
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#accueil" class="nav-logo">
+        <div class="logo-icon"><svg width="34" height="34" viewBox="0 0 34 34" fill="none"><circle cx="17" cy="17" r="16" stroke="currentColor" stroke-width="1.2"/><path d="M8 17 C10 11, 14 11, 17 17 C20 23, 24 23, 26 17" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/><circle cx="8" cy="17" r="1.8" fill="currentColor"/><circle cx="26" cy="17" r="1.8" fill="currentColor"/></svg></div>
+        <div><div class="logo-name">Cabinet Lucie</div><div class="logo-sub">International</div></div>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#neuro">Neuro-Synchronisateur</a></li>
+        <li><a href="#ressources">Ressources</a></li>
+        <li><a href="#evenements">Agenda</a></li>
+        <li><a href="#temoignages">Témoignages</a></li>
+        <li><a href="#bilan" class="nav-bilan">Bilan Gratuit</a></li>
+        <li><a href="#contact" class="nav-rdv">Prendre RDV</a></li>
+      </ul>
+      <button class="burger" id="burger"><span></span><span></span><span></span></button>
+    </div>
   </nav>
 
-  <main id="main-content" role="main">
-    <!-- Accueil -->
-    <section id="accueil-section" class="hero-section" role="region" aria-labelledby="accueil-heading">
-      <div class="hero-background">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <div class="hero-text">
-            <h1 id="accueil-heading" class="hero-title">Cabinet Lucie International</h1>
-            <h2 class="hero-subtitle">Coaching & Neurosciences Appliquées</h2>
-            <p class="hero-description">Avec Dr. Hermann Degla, améliorez votre cerveau et transformez votre vie grâce aux dernières avancées en neurosciences.</p>
-            <div class="hero-features">
-              <div class="feature-item">
-                <i class="fas fa-brain"></i>
-                <span>Neurosciences Appliquées</span>
-              </div>
-              <div class="feature-item">
-                <i class="fas fa-leaf"></i>
-                <span>Solutions Naturelles</span>
-              </div>
-              <div class="feature-item">
-                <i class="fas fa-heart"></i>
-                <span>Accompagnement Personnalisé</span>
-              </div>
+  <!-- HERO -->
+  <section id="accueil" class="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow"><span class="dot-pulse"></span> Cabinet de Coaching & Neurosciences Appliquées</div>
+      <h1>Révélez le <em>potentiel</em><br>de votre cerveau</h1>
+      <p class="hero-lead">Avec le <strong>Dr. Hermann Degla</strong>, expert en neurosciences appliquées,<br>transformez votre vie par une approche scientifique, humaine et éprouvée.</p>
+      <div class="hero-btns">
+        <a href="#bilan" class="btn-primary"><i class="fas fa-brain"></i> Faire un bilan gratuit</a>
+        <a href="#services" class="btn-ghost">Nos services <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat"><div class="hstat-num" data-to="5000">0</div><div class="hstat-lbl">Personnes accompagnées</div></div>
+        <div class="hstat-sep"></div>
+        <div class="hstat"><div class="hstat-num" data-to="20">0</div><div class="hstat-lbl">Ans d'expérience</div></div>
+        <div class="hstat-sep"></div>
+        <div class="hstat"><div class="hstat-num" data-to="98">0</div><div class="hstat-lbl">% satisfaction</div></div>
+      </div>
+    </div>
+    <a href="#apropos" class="scroll-cue"><span>Découvrir</span><div class="scroll-arrow"></div></a>
+  </section>
+
+  <!-- À PROPOS -->
+  <section id="apropos" class="section apropos">
+    <div class="container">
+      <div class="apropos-grid">
+        <div class="apropos-left reveal">
+          <div class="dr-card">
+            <div class="dr-photo">
+              <img src="https://nikk-create.github.io/Lucie-International-Neurologie/images/dr%20degla.jpg" alt="Dr. Hermann Degla" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="dr-fallback" style="display:none"><i class="fas fa-user-tie"></i></div>
+              <div class="dr-badge"><i class="fas fa-brain"></i> Neurosciences</div>
             </div>
-            <div class="cta-buttons">
-              <button class="btn-cta primary" onclick="showSection(8)">Faire un bilan gratuit</button>
-              <button class="btn-cta secondary" onclick="showSection(2)">Découvrir nos services</button>
-            </div>
-          </div>
-          <div class="hero-visual">
-            <div class="hero-stats">
-              <div class="stat">
-                <div class="stat-number">5000+</div>
-                <div class="stat-label">Patients accompagnés</div>
-              </div>
-              <div class="stat">
-                <div class="stat-number">20+</div>
-                <div class="stat-label">Années d'expérience</div>
-              </div>
-              <div class="stat">
-                <div class="stat-number">98%</div>
-                <div class="stat-label">Satisfaction client</div>
-              </div>
+            <div class="dr-creds">
+              <div class="cred"><i class="fas fa-graduation-cap"></i> MD en Neurologie — Université de Paris</div>
+              <div class="cred"><i class="fas fa-certificate"></i> Coach certifié international</div>
+              <div class="cred"><i class="fas fa-globe-africa"></i> Expert reconnu en Afrique & Europe</div>
+              <div class="cred"><i class="fas fa-calendar-alt"></i> Cabinet fondé en 2004</div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="about-preview">
-        <div class="container">
-          <div class="about-grid">
-            <div class="about-text">
-              <h3>Notre approche révolutionnaire</h3>
-              <p>Expert en neurosciences appliquées et en coaching cérébral, nous avons mis au point des méthodes naturelles parmi les plus efficaces du marché.</p>
-              <p>Notre travail est véritablement à la pointe des médecines naturelles et alternatives. Des milliers de personnes améliorent leur vie et leur santé jour après jour avec nos méthodes naturelles.</p>
-              <a href="#" onclick="showSection(7)" class="learn-more-link">En savoir plus sur notre approche <i class="fas fa-arrow-right"></i></a>
-            </div>
-            <div class="about-image">
-              <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=400&q=80" alt="Neurosciences appliquées" />
-            </div>
+        <div class="apropos-right reveal">
+          <div class="section-label">À propos du cabinet</div>
+          <h2 class="section-title">Dr. Hermann <span class="accent">Degla</span></h2>
+          <div class="title-rule"></div>
+          <p class="apropos-lead">Neurologue, neurocoach certifié et fondateur du Cabinet Lucie International, le Dr. Degla consacre sa carrière à révéler le potentiel humain par les neurosciences.</p>
+          <p>Fort de plus de 20 ans d'expérience et de plus de 5 000 personnes accompagnées, il a développé des méthodologies innovantes alliant les dernières avancées scientifiques à une approche profondément humaine.</p>
+          <p>Son cabinet, implanté au Bénin avec un rayonnement international, accueille étudiants, professionnels, parents et entreprises désireux de transformer durablement leur vie.</p>
+          <div class="values-grid">
+            <div class="val"><div class="val-icon"><i class="fas fa-atom"></i></div><div><b>Science</b><p>Méthodes fondées sur les neurosciences</p></div></div>
+            <div class="val"><div class="val-icon"><i class="fas fa-heart"></i></div><div><b>Humanisme</b><p>Chaque individu est unique</p></div></div>
+            <div class="val"><div class="val-icon"><i class="fas fa-chart-line"></i></div><div><b>Excellence</b><p>Résultats mesurables, durables</p></div></div>
+            <div class="val"><div class="val-icon"><i class="fas fa-globe"></i></div><div><b>International</b><p>Vision mondiale, impact local</p></div></div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="services-preview">
-        <div class="container">
-          <h3>Nos domaines d'expertise</h3>
-          <p class="services-intro">Découvrez nos spécialités en neurosciences appliquées, conçues pour optimiser votre potentiel cérébral et améliorer votre qualité de vie.</p>
-          <div class="services-grid">
-            <div class="service-preview-card" data-service="coaching-individuel" style="background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(6, 182, 212, 0.8)), url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80') center/cover;">
-              <div class="card-overlay"></div>
-              <div class="card-content">
-                <i class="fas fa-user"></i>
-                <h4>Coaching Individuel</h4>
-                <p>Développement personnel, gestion du stress, confiance en soi</p>
-                <div class="card-benefits">
-                  <span class="benefit">+95% satisfaction</span>
-                  <span class="benefit">Sessions personnalisées</span>
-                </div>
-                <button class="btn-learn-more" onclick="expandServiceCard('coaching-individuel')">En savoir plus</button>
-              </div>
+  <!-- SERVICES -->
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Nos services</div>
+        <h2 class="section-title">Un accompagnement <span class="accent">sur mesure</span></h2>
+        <p class="section-desc">Des solutions scientifiquement fondées, adaptées à chaque étape de votre développement</p>
+      </div>
+      <div class="services-grid">
+        <div class="scard reveal" style="--c:#1a6cf0"><div class="scard-icon"><i class="fas fa-user-circle"></i></div><h3>Coaching Individuel</h3><p>Développement personnel, gestion du stress, confiance en soi. Un parcours unique centré sur vos objectifs.</p><ul><li>Gestion des émotions & du stress</li><li>Confiance et estime de soi</li><li>Clarté de vision et d'objectifs</li></ul><a href="#contact" class="scard-link">Prendre rendez-vous <i class="fas fa-arrow-right"></i></a></div>
+        <div class="scard scard-featured reveal" style="--c:#0db8a0"><div class="scard-badge">⭐ Le plus demandé</div><div class="scard-icon"><i class="fas fa-graduation-cap"></i></div><h3>Coaching Scolaire & Universitaire</h3><p>Méthodes neuroscientifiques pour booster la mémoire, la concentration et réussir sereinement.</p><ul><li>Techniques de mémorisation avancées</li><li>Gestion du trac aux examens</li><li>Organisation et planification efficace</li></ul><a href="#contact" class="scard-link">Prendre rendez-vous <i class="fas fa-arrow-right"></i></a></div>
+        <div class="scard reveal" style="--c:#7c3af5"><div class="scard-icon"><i class="fas fa-briefcase"></i></div><h3>Coaching en Entreprise</h3><p>Leadership, performance collective et communication : transformez vos équipes par les neurosciences.</p><ul><li>Leadership & prise de décision</li><li>Cohésion et performance d'équipe</li><li>Communication neuroscientifique</li></ul><a href="#contact" class="scard-link">Prendre rendez-vous <i class="fas fa-arrow-right"></i></a></div>
+        <div class="scard reveal" style="--c:#e85d26"><div class="scard-icon"><i class="fas fa-chalkboard-teacher"></i></div><h3>Formations & Ateliers</h3><p>Apprentissages pratiques en neurosciences appliquées, en présentiel ou en ligne, certifiants.</p><ul><li>Ateliers de groupe interactifs</li><li>Formations certifiantes</li><li>Séminaires et conférences</li></ul><a href="#contact" class="scard-link">S'inscrire <i class="fas fa-arrow-right"></i></a></div>
+        <div class="scard reveal" style="--c:#c0392b"><div class="scard-icon"><i class="fas fa-hand-holding-heart"></i></div><h3>Accompagnement Spécialisé</h3><p>Prise en charge des troubles spécifiques : dyslexie, bégaiement, TDAH, difficultés de concentration.</p><ul><li>Dyslexie & troubles dys</li><li>Bégaiement & communication</li><li>TDAH & gestion de l'attention</li></ul><a href="#contact" class="scard-link">Prendre rendez-vous <i class="fas fa-arrow-right"></i></a></div>
+        <div class="scard reveal" style="--c:#f39c12"><div class="scard-icon"><i class="fas fa-users"></i></div><h3>Parents & Éducateurs</h3><p>Outils concrets pour accompagner les enfants dans leur développement cognitif et émotionnel.</p><ul><li>Comprendre le cerveau de l'enfant</li><li>Soutien à la parentalité</li><li>Pédagogie par les neurosciences</li></ul><a href="#contact" class="scard-link">Prendre rendez-vous <i class="fas fa-arrow-right"></i></a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEURO-SYNCHRONISATEUR -->
+  <section id="neuro" class="section neuro-section">
+    <div class="container">
+      <div class="neuro-grid">
+        <div class="neuro-visual reveal">
+          <div class="brain-wrap">
+            <div class="brain-ring r1"></div><div class="brain-ring r2"></div><div class="brain-ring r3"></div>
+            <div class="brain-core"><i class="fas fa-brain"></i></div>
+          </div>
+          <div class="float-card fc-left"><div class="wave-mini"><svg viewBox="0 0 120 36" preserveAspectRatio="none"><path d="M0,18 Q15,4 30,18 Q45,32 60,18 Q75,4 90,18 Q105,32 120,18" fill="none" stroke="#0db8a0" stroke-width="2.2" stroke-linecap="round"/></svg></div><span>Synchronisation hémisphérique</span></div>
+          <div class="float-card fc-right"><i class="fas fa-bolt" style="color:#f39c12;font-size:1.2rem"></i><span>+40% de performance<br>cognitive</span></div>
+        </div>
+        <div class="neuro-content reveal">
+          <div class="section-label">Innovation exclusive</div>
+          <h2 class="section-title">Le <span class="accent">Neuro-Synchronisateur</span></h2>
+          <div class="title-rule"></div>
+          <p class="neuro-lead">Une technologie révolutionnaire fondée sur le principe de <strong>l'audition alternative</strong> — synchroniser les deux hémisphères cérébraux pour optimiser vos performances cognitives.</p>
+          <div class="tabs">
+            <button class="tab active" data-tab="principe">Principe</button>
+            <button class="tab" data-tab="applications">Applications</button>
+            <button class="tab" data-tab="benefices">Bénéfices</button>
+          </div>
+          <div class="tab-pane active" id="tab-principe"><p>Le Neuro-Synchronisateur utilise des sons binauraux calibrés pour induire des états cérébraux spécifiques. En diffusant des fréquences légèrement différentes dans chaque oreille, il provoque une synchronisation hémisphérique naturelle favorisant l'apprentissage, la créativité et la récupération.</p></div>
+          <div class="tab-pane" id="tab-applications"><ul class="check-list"><li><i class="fas fa-check-circle"></i> Préparation aux examens et mémorisation</li><li><i class="fas fa-check-circle"></i> Gestion du stress et de l'anxiété</li><li><i class="fas fa-check-circle"></i> Amélioration des performances sportives</li><li><i class="fas fa-check-circle"></i> Accompagnement TDAH, bégaiement</li><li><i class="fas fa-check-circle"></i> Méditation et pleine conscience</li></ul></div>
+          <div class="tab-pane" id="tab-benefices"><div class="benefices"><div class="bene"><i class="fas fa-brain"></i><span>Concentration</span></div><div class="bene"><i class="fas fa-lightbulb"></i><span>Créativité</span></div><div class="bene"><i class="fas fa-moon"></i><span>Sommeil</span></div><div class="bene"><i class="fas fa-shield-alt"></i><span>Anti-stress</span></div><div class="bene"><i class="fas fa-book-open"></i><span>Mémoire</span></div><div class="bene"><i class="fas fa-smile"></i><span>Bien-être</span></div></div></div>
+          <div class="neuro-btns">
+            <a href="#contact" class="btn-primary"><i class="fas fa-headphones"></i> Demander une démo</a>
+            <a href="#" class="btn-outline" onclick="event.preventDefault();showToast('Documentation envoyée à votre email !')"><i class="fas fa-file-pdf"></i> Documentation PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESSOURCES -->
+  <section id="ressources" class="section ressources">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Ressources</div>
+        <h2 class="section-title">Approfondissez vos <span class="accent">connaissances</span></h2>
+        <p class="section-desc">Articles, vidéos et outils pratiques pour explorer les neurosciences</p>
+      </div>
+      <div class="articles-grid">
+        <article class="art-card reveal" style="--g:linear-gradient(135deg,#1a6cf0,#0db8a0)"><div class="art-thumb"><i class="fas fa-brain"></i></div><div class="art-body"><span class="art-tag">Neurosciences</span><h3>Comment le cerveau mémorise-t-il ?</h3><p>Comprendre les mécanismes de la mémoire à long terme pour mieux apprendre et retenir l'essentiel.</p><a href="#" class="art-link">Lire l'article <i class="fas fa-arrow-right"></i></a></div></article>
+        <article class="art-card reveal" style="--g:linear-gradient(135deg,#7c3af5,#e85d26)"><div class="art-thumb"><i class="fas fa-heartbeat"></i></div><div class="art-body"><span class="art-tag">Bien-être</span><h3>Stress et cortisol : reprendre le contrôle</h3><p>Les techniques neuroscientifiques pour réguler votre réponse au stress et retrouver l'équilibre.</p><a href="#" class="art-link">Lire l'article <i class="fas fa-arrow-right"></i></a></div></article>
+        <article class="art-card reveal" style="--g:linear-gradient(135deg,#f39c12,#e85d26)"><div class="art-thumb"><i class="fas fa-child"></i></div><div class="art-body"><span class="art-tag">Éducation</span><h3>Aider son enfant à mieux se concentrer</h3><p>Stratégies pratiques basées sur les neurosciences pour soutenir votre enfant à l'école.</p><a href="#" class="art-link">Lire l'article <i class="fas fa-arrow-right"></i></a></div></article>
+      </div>
+      <div class="newsletter-box reveal">
+        <div class="nl-text"><h3><i class="fas fa-envelope-open-text"></i> Restez informé</h3><p>Recevez nos conseils neuroscientifiques et actualités en exclusivité</p></div>
+        <form class="nl-form" id="nlForm"><input type="email" placeholder="Votre adresse email" required><button type="submit" class="btn-primary">S'abonner</button></form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÉVÉNEMENTS -->
+  <section id="evenements" class="section events">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Agenda</div>
+        <h2 class="section-title">Prochains <span class="accent">événements</span></h2>
+      </div>
+      <div class="events-list">
+        <div class="event reveal"><div class="ev-date"><span class="ev-day">15</span><span class="ev-mo">Juil</span></div><div class="ev-info"><span class="ev-type">Séminaire</span><h4>Neurosciences & Performance au Travail</h4><p><i class="fas fa-map-marker-alt"></i> Cotonou, Bénin &nbsp;·&nbsp; <i class="fas fa-clock"></i> 9h00 – 17h00</p></div><a href="#contact" class="btn-outline-sm">S'inscrire</a></div>
+        <div class="event reveal"><div class="ev-date"><span class="ev-day">28</span><span class="ev-mo">Juil</span></div><div class="ev-info"><span class="ev-type ev-online">En ligne</span><h4>Webinaire — Mémoire & Concentration pour Étudiants</h4><p><i class="fas fa-video"></i> Zoom &nbsp;·&nbsp; <i class="fas fa-clock"></i> 18h00 – 20h00</p></div><a href="#contact" class="btn-outline-sm">S'inscrire</a></div>
+        <div class="event reveal"><div class="ev-date"><span class="ev-day">10</span><span class="ev-mo">Août</span></div><div class="ev-info"><span class="ev-type">Atelier pratique</span><h4>Atelier — Neuro-Synchronisateur & Bien-être</h4><p><i class="fas fa-map-marker-alt"></i> Cabinet Lucie International &nbsp;·&nbsp; <i class="fas fa-clock"></i> 10h00 – 13h00</p></div><a href="#contact" class="btn-outline-sm">S'inscrire</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TÉMOIGNAGES -->
+  <section id="temoignages" class="section temoignages">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Témoignages</div>
+        <h2 class="section-title">Ils ont <span class="accent">transformé</span> leur vie</h2>
+      </div>
+      <div class="temo-slider reveal">
+        <div class="temo-track" id="temoTrack">
+          <div class="temo"><div class="temo-stars">★★★★★</div><p>« Grâce au Dr. Degla, j'ai appris à gérer mon stress avant les examens. Ma moyenne a augmenté de 4 points en un semestre. Le Neuro-Synchronisateur est incroyable. »</p><div class="temo-author"><div class="temo-av" style="--c:#1a6cf0">A</div><div><b>Adjoua K.</b><span>Étudiante en médecine</span></div></div></div>
+          <div class="temo"><div class="temo-stars">★★★★★</div><p>« Le coaching en entreprise du Cabinet Lucie a transformé notre équipe. Moins de conflits, plus d'efficacité. Nos résultats trimestriels parlent d'eux-mêmes. »</p><div class="temo-author"><div class="temo-av" style="--c:#0db8a0">M</div><div><b>Marc O.</b><span>Directeur commercial</span></div></div></div>
+          <div class="temo"><div class="temo-stars">★★★★★</div><p>« Mon fils avait des difficultés de concentration. Après 3 mois d'accompagnement spécialisé, ses progrès sont spectaculaires. Merci Dr. Degla ! »</p><div class="temo-author"><div class="temo-av" style="--c:#7c3af5">F</div><div><b>Fatou D.</b><span>Parent d'élève</span></div></div></div>
+          <div class="temo"><div class="temo-stars">★★★★★</div><p>« La formation en neurosciences m'a donné des outils concrets que j'utilise quotidiennement avec mes élèves. Une véritable révolution pédagogique. »</p><div class="temo-author"><div class="temo-av" style="--c:#e85d26">P</div><div><b>Prof. Pascal A.</b><span>Enseignant, lycée</span></div></div></div>
+          <div class="temo"><div class="temo-stars">★★★★★</div><p>« Je souffrais de bégaiement depuis l'enfance. L'accompagnement du Dr. Degla a changé ma vie professionnelle et personnelle. Je n'aurais jamais cru que c'était possible. »</p><div class="temo-author"><div class="temo-av" style="--c:#f39c12">S</div><div><b>Serge N.</b><span>Ingénieur</span></div></div></div>
+        </div>
+        <div class="temo-nav">
+          <button class="temo-btn" id="temoPrev"><i class="fas fa-chevron-left"></i></button>
+          <div class="temo-dots" id="temoDots"></div>
+          <button class="temo-btn" id="temoNext"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BILAN COGNITIF -->
+  <section id="bilan" class="section bilan-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Évaluation gratuite</div>
+        <h2 class="section-title">Bilan <span class="accent">Cognitif</span></h2>
+        <p class="section-desc">Évaluez votre état cognitif actuel et recevez des recommandations personnalisées</p>
+      </div>
+      <div class="bilan-wrap reveal">
+        <div class="bilan-progress">
+          <div class="bstep-ind active" data-step="1"><span>1</span><small>Informations</small></div>
+          <div class="bstep-ind" data-step="2"><span>2</span><small>Mémoire</small></div>
+          <div class="bstep-ind" data-step="3"><span>3</span><small>Physique</small></div>
+          <div class="bstep-ind" data-step="4"><span>4</span><small>Personnalité</small></div>
+          <div class="bstep-ind" data-step="5"><span>5</span><small>Résultats</small></div>
+        </div>
+        <form class="bilan-form" id="bilanForm">
+          <!-- Step 1 -->
+          <div class="bstep-content active" id="bstep1">
+            <h3><i class="fas fa-user"></i> Informations personnelles</h3>
+            <div class="form-row"><div class="form-group"><label>Nom *</label><input type="text" name="nom" required></div><div class="form-group"><label>Prénom *</label><input type="text" name="prenom" required></div></div>
+            <div class="form-row"><div class="form-group"><label>Âge *</label><input type="number" name="age" min="10" max="99" required></div><div class="form-group"><label>Email *</label><input type="email" name="email" required></div></div>
+            <div class="form-row">
+              <div class="form-group"><label>Sexe</label><select name="sexe"><option value="">—</option><option>Homme</option><option>Femme</option><option>Autre</option></select></div>
+              <div class="form-group"><label>Sous prise en charge médicale ?</label><select name="medical"><option value="">—</option><option>Oui</option><option>Non</option></select></div>
             </div>
-            <div class="service-preview-card" data-service="coaching-scolaire" style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.9), rgba(30, 64, 175, 0.8)), url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80') center/cover;">
-              <div class="card-overlay"></div>
-              <div class="card-content">
-                <i class="fas fa-graduation-cap"></i>
-                <h4>Coaching Scolaire et Universitaire</h4>
-                <p>Mémoire, concentration, préparation aux examens</p>
-                <div class="card-benefits">
-                  <span class="benefit">Méthodes éprouvées</span>
-                  <span class="benefit">Résultats garantis</span>
-                </div>
-                <button class="btn-learn-more" onclick="expandServiceCard('coaching-scolaire')">En savoir plus</button>
-              </div>
-            </div>
-            <div class="service-preview-card" data-service="coaching-entreprise" style="background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(139, 92, 246, 0.8)), url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80') center/cover;">
-              <div class="card-overlay"></div>
-              <div class="card-content">
-                <i class="fas fa-building"></i>
-                <h4>Coaching Entreprise</h4>
-                <p>Leadership, performance, communication</p>
-                <div class="card-benefits">
-                  <span class="benefit">Formation d'équipe</span>
-                  <span class="benefit">ROI mesuré</span>
-                </div>
-                <button class="btn-learn-more" onclick="expandServiceCard('coaching-entreprise')">En savoir plus</button>
-              </div>
-            </div>
-            <div class="service-preview-card" data-service="formations-ateliers" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.9), rgba(6, 182, 212, 0.8)), url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=400&q=80') center/cover;">
-              <div class="card-overlay"></div>
-              <div class="card-content">
-                <i class="fas fa-chalkboard-teacher"></i>
-                <h4>Formations et Ateliers</h4>
-                <p>Apprentissages pratiques en neurosciences appliquées.</p>
-                <div class="card-benefits">
-                  <span class="benefit">Expertise reconnue</span>
-                  <span class="benefit">Certifications</span>
-                </div>
-                <button class="btn-learn-more" onclick="window.location.href='service6.html'">En savoir plus</button>
-              </div>
-            </div>
-            <div class="service-preview-card" data-service="accompagnement-specialise" style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.9), rgba(139, 92, 246, 0.8)), url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=400&q=80') center/cover;">
-              <div class="card-overlay"></div>
-              <div class="card-content">
-                <i class="fas fa-hand-holding-heart"></i>
-                <h4>Accompagnement Spécialisé</h4>
-                <p>Troubles spécifiques : dyslexie, bégaiement, difficultés de concentration.</p>
-                <div class="card-benefits">
-                  <span class="benefit">Expertise spécialisée</span>
-                  <span class="benefit">Approche individualisée</span>
-                </div>
-                <button class="btn-learn-more" onclick="window.location.href='service1.html'">En savoir plus</button>
-              </div>
+            <div class="form-group"><label>Difficultés ou objectifs actuels</label><textarea name="difficultes" rows="3" placeholder="Décrivez brièvement..."></textarea></div>
+          </div>
+          <!-- Step 2 -->
+          <div class="bstep-content" id="bstep2">
+            <h3><i class="fas fa-memory"></i> Mémoire & Concentration</h3>
+            <p class="bilan-instr">Répondez selon votre état <strong>habituel</strong>, pas uniquement aujourd'hui</p>
+            <div class="bilan-table">
+              <div class="bt-row bt-header"><div>Affirmation</div><div>Oui</div><div>Non</div></div>
+              <div class="bt-row"><div>En général, j'ai les idées claires</div><div><input type="radio" name="m1" value="1" required></div><div><input type="radio" name="m1" value="0"></div></div>
+              <div class="bt-row"><div>Je me concentre facilement</div><div><input type="radio" name="m2" value="1" required></div><div><input type="radio" name="m2" value="0"></div></div>
+              <div class="bt-row"><div>J'ai l'esprit rapide</div><div><input type="radio" name="m3" value="1" required></div><div><input type="radio" name="m3" value="0"></div></div>
+              <div class="bt-row"><div>Je me disperse souvent</div><div><input type="radio" name="m4" value="0" required></div><div><input type="radio" name="m4" value="1"></div></div>
+              <div class="bt-row"><div>J'ai beaucoup d'imagination</div><div><input type="radio" name="m5" value="1" required></div><div><input type="radio" name="m5" value="0"></div></div>
+              <div class="bt-row"><div>Je suis facilement critique envers moi-même</div><div><input type="radio" name="m6" value="0" required></div><div><input type="radio" name="m6" value="1"></div></div>
+              <div class="bt-row"><div>J'apprécie les débats et échanges intellectuels</div><div><input type="radio" name="m7" value="1" required></div><div><input type="radio" name="m7" value="0"></div></div>
+              <div class="bt-row"><div>Je réfléchis avant d'agir</div><div><input type="radio" name="m8" value="1" required></div><div><input type="radio" name="m8" value="0"></div></div>
             </div>
           </div>
+          <!-- Step 3 -->
+          <div class="bstep-content" id="bstep3">
+            <h3><i class="fas fa-heartbeat"></i> Condition Physique & Énergie</h3>
+            <p class="bilan-instr">Répondez selon votre état <strong>habituel</strong></p>
+            <div class="bilan-table">
+              <div class="bt-row bt-header"><div>Affirmation</div><div>Oui</div><div>Non</div></div>
+              <div class="bt-row"><div>La plupart du temps, j'ai beaucoup d'énergie</div><div><input type="radio" name="p1" value="1" required></div><div><input type="radio" name="p1" value="0"></div></div>
+              <div class="bt-row"><div>J'ai souvent une tension artérielle élevée</div><div><input type="radio" name="p2" value="0" required></div><div><input type="radio" name="p2" value="1"></div></div>
+              <div class="bt-row"><div>Je souffre d'insomnie</div><div><input type="radio" name="p3" value="0" required></div><div><input type="radio" name="p3" value="1"></div></div>
+              <div class="bt-row"><div>Bouger me revigore</div><div><input type="radio" name="p4" value="1" required></div><div><input type="radio" name="p4" value="0"></div></div>
+              <div class="bt-row"><div>Je n'ai pas besoin de café pour démarrer</div><div><input type="radio" name="p5" value="1" required></div><div><input type="radio" name="p5" value="0"></div></div>
+              <div class="bt-row"><div>Je me sens en forme après l'exercice</div><div><input type="radio" name="p6" value="1" required></div><div><input type="radio" name="p6" value="0"></div></div>
+              <div class="bt-row"><div>Je suis soupe au lait</div><div><input type="radio" name="p7" value="0" required></div><div><input type="radio" name="p7" value="1"></div></div>
+              <div class="bt-row"><div>J'ai des périodes de grande énergie</div><div><input type="radio" name="p8" value="1" required></div><div><input type="radio" name="p8" value="0"></div></div>
+            </div>
+          </div>
+          <!-- Step 4 -->
+          <div class="bstep-content" id="bstep4">
+            <h3><i class="fas fa-brain"></i> Personnalité & Caractère</h3>
+            <p class="bilan-instr">Répondez honnêtement selon votre comportement <strong>habituel</strong></p>
+            <div class="bilan-table">
+              <div class="bt-row bt-header"><div>Affirmation</div><div>Oui</div><div>Non</div></div>
+              <div class="bt-row"><div>Je suis dominateur(trice) dans mes relations</div><div><input type="radio" name="c1" value="0" required></div><div><input type="radio" name="c1" value="1"></div></div>
+              <div class="bt-row"><div>Je regarde plutôt vers l'avenir</div><div><input type="radio" name="c2" value="1" required></div><div><input type="radio" name="c2" value="0"></div></div>
+              <div class="bt-row"><div>Les autres me voient comme un cérébral</div><div><input type="radio" name="c3" value="1" required></div><div><input type="radio" name="c3" value="0"></div></div>
+              <div class="bt-row"><div>J'ai du mal à anticiper les conflits</div><div><input type="radio" name="c4" value="0" required></div><div><input type="radio" name="c4" value="1"></div></div>
+              <div class="bt-row"><div>Les autres me voient comme un esprit novateur</div><div><input type="radio" name="c5" value="1" required></div><div><input type="radio" name="c5" value="0"></div></div>
+              <div class="bt-row"><div>Je suis souvent agité(e) ou irrité(e)</div><div><input type="radio" name="c6" value="0" required></div><div><input type="radio" name="c6" value="1"></div></div>
+              <div class="bt-row"><div>Je suis exigeant(e) envers moi-même</div><div><input type="radio" name="c7" value="1" required></div><div><input type="radio" name="c7" value="0"></div></div>
+              <div class="bt-row"><div>Je réagis agressivement à la critique</div><div><input type="radio" name="c8" value="0" required></div><div><input type="radio" name="c8" value="1"></div></div>
+            </div>
+          </div>
+          <!-- Step 5 : Résultats -->
+          <div class="bstep-content" id="bstep5">
+            <div id="bilanResults"></div>
+          </div>
+          <div class="bilan-nav">
+            <button type="button" class="btn-outline" id="bilanPrev" style="display:none"><i class="fas fa-arrow-left"></i> Précédent</button>
+            <button type="button" class="btn-primary" id="bilanNext">Suivant <i class="fas fa-arrow-right"></i></button>
+            <button type="submit" class="btn-primary" id="bilanSubmit" style="display:none"><i class="fas fa-chart-bar"></i> Voir mes résultats</button>
+          </div>
+        </form>
       </div>
+    </div>
+  </section>
 
-      <!-- Newsletter signup -->
-      <div class="newsletter-section">
-        <div class="container">
-          <h3>Restez informé</h3>
-          <p>Inscrivez-vous à notre newsletter pour recevoir les dernières actualités en neurosciences et coaching.</p>
-          <form class="newsletter-form">
-            <input type="email" placeholder="Votre email" required>
-            <button type="submit" class="btn-cta">S'inscrire</button>
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Contact & Rendez-vous</div>
+        <h2 class="section-title">Commençons votre <span class="accent">transformation</span></h2>
+        <p class="section-desc">Chaque grand changement commence par une première conversation</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="cinfo-card">
+            <h3>Parlons de vos objectifs</h3>
+            <p>Que vous soyez étudiant, professionnel ou parent, contactez-nous pour un premier échange sans engagement.</p>
+            <div class="cdetails">
+              <div class="cd"><div class="cd-icon"><i class="fas fa-phone"></i></div><div><b>Téléphone</b><a href="tel:+2290196964648">+229 01 96 96 4648</a><a href="tel:+2290163906162">+229 01 63 90 6162</a><a href="tel:+33758387534">+33 7 58 38 75 34</a></div></div>
+              <div class="cd"><div class="cd-icon"><i class="fas fa-envelope"></i></div><div><b>Email</b><a href="mailto:contact@cabinetlucie.com">contact@cabinetlucie.com</a></div></div>
+              <div class="cd"><div class="cd-icon"><i class="fas fa-map-marker-alt"></i></div><div><b>Adresse</b><span>Cotonou, Bénin</span></div></div>
+              <div class="cd"><div class="cd-icon whatsapp-icon"><i class="fab fa-whatsapp"></i></div><div><b>WhatsApp</b><a href="https://wa.me/2290196964648" target="_blank">Envoyer un message</a></div></div>
+            </div>
+            <div class="hours"><i class="fas fa-clock"></i><div><b>Horaires</b><span>Lun – Ven : 9h00 – 18h00 &nbsp;|&nbsp; Samedi : 9h00 – 12h00</span></div></div>
+            <div class="social-bar">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <form id="contactForm" class="cform">
+            <div class="form-row"><div class="form-group"><label>Prénom *</label><input type="text" name="prenom" placeholder="Votre prénom" required></div><div class="form-group"><label>Nom *</label><input type="text" name="nom" placeholder="Votre nom" required></div></div>
+            <div class="form-group"><label>Email *</label><input type="email" name="email" placeholder="votre@email.com" required></div>
+            <div class="form-group"><label>Téléphone</label><input type="tel" name="tel" placeholder="+229 ..."></div>
+            <div class="form-row">
+              <div class="form-group"><label>Service souhaité</label><select name="service"><option value="">Choisir...</option><option>Coaching individuel</option><option>Coaching scolaire / universitaire</option><option>Coaching en entreprise</option><option>Formations & Ateliers</option><option>Accompagnement spécialisé</option><option>Neuro-Synchronisateur</option><option>Autre</option></select></div>
+              <div class="form-group"><label>Date souhaitée</label><input type="date" name="date"></div>
+            </div>
+            <div class="form-group"><label>Message *</label><textarea name="message" rows="4" placeholder="Décrivez votre situation ou vos objectifs..." required></textarea></div>
+            <button type="submit" class="btn-primary btn-full"><i class="fas fa-paper-plane"></i> Envoyer ma demande</button>
           </form>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- À propos -->
-    <section id="apropos-section" class="hidden" role="region" aria-labelledby="apropos-heading">
-      <h2 id="apropos-heading">À propos</h2>
-
-      <!-- Logos du cabinet -->
-      <div class="cabinet-logos">
-        <h3>Nos Affiliations</h3>
-        <div class="logos-grid">
-          <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=200&q=80" alt="Association Médicale Française" />
-          <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=200&q=80" alt="Société Française de Neurologie" />
-          <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=200&q=80" alt="Ordre des Médecins" />
-          <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=200&q=80" alt="Certification Qualité" />
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo footer-logo"><div class="logo-icon"><svg width="30" height="30" viewBox="0 0 34 34" fill="none"><circle cx="17" cy="17" r="16" stroke="currentColor" stroke-width="1.2"/><path d="M8 17 C10 11, 14 11, 17 17 C20 23, 24 23, 26 17" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/><circle cx="8" cy="17" r="1.8" fill="currentColor"/><circle cx="26" cy="17" r="1.8" fill="currentColor"/></svg></div><div><div class="logo-name">Cabinet Lucie</div><div class="logo-sub">International</div></div></div>
+          <p>Révéler le potentiel humain par la science des neurosciences appliquées.</p>
+          <div class="social-bar"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
         </div>
+        <div class="footer-col"><h4>Navigation</h4><a href="#accueil">Accueil</a><a href="#apropos">À propos</a><a href="#services">Services</a><a href="#neuro">Neuro-Synchronisateur</a><a href="#ressources">Ressources</a><a href="#evenements">Agenda</a></div>
+        <div class="footer-col"><h4>Services</h4><a href="#services">Coaching individuel</a><a href="#services">Coaching scolaire</a><a href="#services">Coaching entreprise</a><a href="#services">Formations & Ateliers</a><a href="#services">Accompagnement spécialisé</a></div>
+        <div class="footer-col"><h4>Contact</h4><a href="tel:+2290196964648">+229 01 96 96 4648</a><a href="tel:+33758387534">+33 7 58 38 75 34</a><a href="mailto:contact@cabinetlucie.com">contact@cabinetlucie.com</a><a href="https://wa.me/2290196964648" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a><p style="margin-top:.8rem;font-size:.82rem;opacity:.55">Cotonou, Bénin</p></div>
       </div>
+      <div class="footer-bottom"><span>© 2025 Cabinet Lucie International — Tous droits réservés</span><span>Dr. Hermann Degla — Expert en Neurosciences Appliquées</span></div>
+    </div>
+  </footer>
 
-      <!-- Médecin en chef -->
-      <div class="chief-doctor">
-        <h3>Médecin en Chef</h3>
-        <div class="doctor-card">
-          <img src="images/dr degla.jpg" alt="Dr. Hermann Degla" />
-          <div class="doctor-details">
-            <h4>Dr. Hermann Degla</h4>
-            <p><strong>Poste :</strong> Neurologue et Neurocoach certifié</p>
-            <p><strong>Études :</strong> MD en Neurologie, Université de Paris. Spécialisation en Neurosciences Appliquées.</p>
-            <p>Le Dr. Hermann Degla vous accompagne dans l'évaluation et l'amélioration de vos capacités cognitives. Avec plus de 20 ans d'expérience, il a traité plus de 5000 patients et fondé son cabinet en 2004.</p>
-            <div class="stats">
-              <div class="stat-item">
-                <h3>5000+</h3>
-                <p>Patients traités</p>
-              </div>
-              <div class="stat-item">
-                <h3>20</h3>
-                <p>Années d'expérience</p>
-              </div>
-              <div class="stat-item">
-                <h3>2004</h3>
-                <p>Année de fondation</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Équipe -->
-      <div class="team-section">
-        <h3>Notre Équipe</h3>
-        <div class="team-grid">
-          <div class="team-member">
-            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=300&q=80" alt="Dr. Marie Dubois" />
-            <h4>Dr. Marie Dubois</h4>
-            <p><strong>Poste :</strong> Neurologue</p>
-            <p><strong>Études :</strong> MD en Neurologie, Université de Paris. Formation en Imagerie Cérébrale.</p>
-          </div>
-          <div class="team-member">
-            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=300&q=80" alt="Sophie Martin" />
-            <h4>Sophie Martin</h4>
-            <p><strong>Poste :</strong> Infirmière spécialisée</p>
-            <p><strong>Études :</strong> Diplôme d'État d'Infirmière, Formation complémentaire en Neurologie.</p>
-          </div>
-          <div class="team-member">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" alt="Dr. Pierre Leroy" />
-            <h4>Dr. Pierre Leroy</h4>
-            <p><strong>Poste :</strong> Psychologue</p>
-            <p><strong>Études :</strong> Doctorat en Psychologie Clinique, Spécialisation en Santé Mentale.</p>
-          </div>
-          <div class="team-member">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80" alt="Alice Bernard" />
-            <h4>Alice Bernard</h4>
-            <p><strong>Poste :</strong> Assistante médicale</p>
-            <p><strong>Études :</strong> BTS Métiers de la Santé, Formation en Administration Médicale.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services-section" class="hidden" role="region" aria-labelledby="services-heading">
-      <h2 id="services-heading">Nos Services</h2>
-      <div id="services-list" class="grid"></div>
-
-      <div id="service-details" class="hidden">
-        <button class="btn-back" onclick="showServicesList()">← Retour aux services</button>
-        <h3 id="detail-title"></h3>
-        <img id="detail-image" src="" alt="" />
-        <div id="detail-description"></div>
-      </div>
-    </section>
-
-    <!-- Neuro-Synchronisateur -->
-    <section id="neuro-synchronisateur-section" class="hidden" role="region" aria-labelledby="neuro-heading">
-      <h2 id="neuro-heading">Le Neuro-Synchronisateur</h2>
-      <div class="neuro-sync-content">
-        <div class="neuro-sync-intro">
-          <h3>Technologie Révolutionnaire</h3>
-          <p>Le Neuro-Synchronisateur est un dispositif innovant qui utilise les ondes cérébrales pour harmoniser les hémisphères gauche et droit du cerveau, favorisant ainsi un état de cohérence mentale optimale.</p>
-          <div class="neuro-sync-features">
-            <div class="feature">
-              <i class="fas fa-sync"></i>
-              <h4>Synchronisation Hémisphérique</h4>
-              <p>Harmonise les deux hémisphères cérébraux pour une meilleure intégration cognitive.</p>
-            </div>
-            <div class="feature">
-              <i class="fas fa-brain"></i>
-              <h4>Optimisation Neuronale</h4>
-              <p>Améliore les connexions synaptiques et la plasticité cérébrale.</p>
-            </div>
-            <div class="feature">
-              <i class="fas fa-peace"></i>
-              <h4>Réduction du Stress</h4>
-              <p>Diminue l'activité du système nerveux sympathique pour un état de relaxation profonde.</p>
-            </div>
-          </div>
-        </div>
-        <div class="neuro-sync-benefits">
-          <h3>Bénéfices</h3>
-          <ul>
-            <li>Amélioration de la concentration et de la mémoire</li>
-            <li>Réduction du stress et de l'anxiété</li>
-            <li>Meilleure prise de décision</li>
-            <li>Augmentation de la créativité</li>
-            <li>Optimisation des performances cognitives</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Ressources -->
-    <section id="ressources-section" class="hidden" role="region" aria-labelledby="ressources-heading">
-      <h2 id="ressources-heading">Ressources</h2>
-      <div class="resources-content">
-        <div class="resource-categories">
-          <div class="resource-category">
-            <h3>Articles Scientifiques</h3>
-            <div class="resource-list">
-              <div class="resource-item">
-                <h4>Les Neurosciences Appliquées au Coaching</h4>
-                <p>Découvrez comment les dernières découvertes en neurosciences révolutionnent le coaching personnel.</p>
-                <a href="#" class="resource-link">Lire l'article</a>
-              </div>
-              <div class="resource-item">
-                <h4>Plasticité Cérébrale et Développement Personnel</h4>
-                <p>Comment votre cerveau peut se reprogrammer pour atteindre vos objectifs.</p>
-                <a href="#" class="resource-link">Lire l'article</a>
-              </div>
-            </div>
-          </div>
-          <div class="resource-category">
-            <h3>Vidéos Éducatives</h3>
-            <div class="resource-list">
-              <div class="resource-item">
-                <h4>Comprendre le Fonctionnement du Cerveau</h4>
-                <p>Une vidéo explicative sur les mécanismes cérébraux fondamentaux.</p>
-                <a href="#" class="resource-link">Voir la vidéo</a>
-              </div>
-            </div>
-          </div>
-          <div class="resource-category">
-            <h3>Outils Pratiques</h3>
-            <div class="resource-list">
-              <div class="resource-item">
-                <h4>Questionnaire d'Auto-Évaluation</h4>
-                <p>Évaluez votre état cognitif actuel avec notre questionnaire détaillé.</p>
-              <a href="#" onclick="showSection(8)" class="resource-link">Faire le test</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Actualités & Événements -->
-    <section id="actualites-section" class="hidden" role="region" aria-labelledby="actualites-heading">
-      <h2 id="actualites-heading">Actualités & Événements</h2>
-      <div class="news-events-content">
-        <div class="news-grid">
-          <div class="news-item">
-            <div class="news-image">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Conférence neurosciences" />
-            </div>
-            <div class="news-content">
-              <h3>Conférence sur les Neurosciences Appliquées</h3>
-              <p class="news-date">15 Mars 2024</p>
-              <p>Découvrez les dernières avancées en neurosciences et leur application pratique dans le coaching et le développement personnel.</p>
-              <a href="#" class="news-link">En savoir plus</a>
-            </div>
-          </div>
-          <div class="news-item">
-            <div class="news-image">
-              <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=400&q=80" alt="Atelier coaching" />
-            </div>
-            <div class="news-content">
-              <h3>Atelier de Coaching Cérébral</h3>
-              <p class="news-date">22 Avril 2024</p>
-              <p>Participez à notre atelier pratique sur les techniques de coaching basées sur les neurosciences.</p>
-              <a href="#" class="news-link">S'inscrire</a>
-            </div>
-          </div>
-        </div>
-        <div class="upcoming-events">
-          <h3>Événements à Venir</h3>
-          <div class="event-list">
-            <div class="event-item">
-              <div class="event-date">
-                <span class="day">15</span>
-                <span class="month">Mai</span>
-              </div>
-              <div class="event-details">
-                <h4>Webinaire: Le Cerveau et le Stress</h4>
-                <p>Apprenez à gérer le stress grâce aux neurosciences.</p>
-              </div>
-            </div>
-            <div class="event-item">
-              <div class="event-date">
-                <span class="day">10</span>
-                <span class="month">Juin</span>
-              </div>
-              <div class="event-details">
-                <h4>Formation Coaching Entreprise</h4>
-                <p>Programme complet pour les professionnels du coaching.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Rendez-vous -->
-    <section id="rendezvous-section" class="hidden" role="region" aria-labelledby="rendezvous-heading">
-      <h2 id="rendezvous-heading">Prendre Rendez-vous</h2>
-      <form id="rendezvousForm" novalidate>
-        <div class="form-group">
-          <label for="rv-nom">Nom complet *</label>
-          <input type="text" id="rv-nom" name="nom" required aria-required="true" />
-        </div>
-        <div class="form-group">
-          <label for="rv-email">Email *</label>
-          <input type="email" id="rv-email" name="email" required aria-required="true" />
-        </div>
-        <div class="form-group">
-          <label for="rv-phone">Téléphone</label>
-          <input type="tel" id="rv-phone" name="phone" />
-        </div>
-        <div class="form-group">
-          <label for="rv-service">Service souhaité *</label>
-          <select id="rv-service" name="service" required aria-required="true">
-            <option value="">-- Sélectionnez un service --</option>
-            <option value="coaching-individuel">Coaching Individuel</option>
-            <option value="coaching-scolaire">Coaching Scolaire et Universitaire</option>
-            <option value="coaching-entreprise">Coaching en Entreprise</option>
-            <option value="formations">Formations et Ateliers</option>
-            <option value="accompagnement-specialise">Accompagnement Spécialisé</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="rv-date">Date souhaitée *</label>
-          <input type="date" id="rv-date" name="date" required aria-required="true" />
-        </div>
-        <div class="form-group">
-          <label for="rv-time">Heure souhaitée *</label>
-          <input type="time" id="rv-time" name="time" required aria-required="true" />
-        </div>
-        <div class="form-group">
-          <label for="rv-message">Message complémentaire</label>
-          <textarea id="rv-message" name="message" rows="4"></textarea>
-        </div>
-        <button type="submit" class="btn-submit">Envoyer la demande</button>
-      </form>
-      <div id="rv-confirmation" class="hidden" role="alert" aria-live="polite"></div>
-    </section>
-
-    <!-- Bilan -->
-    <section id="bilan-section" class="hidden" role="region" aria-labelledby="bilan-heading">
-      <h2 id="bilan-heading">BILAN D'ÉVALUATION</h2>
-      <form id="bilanForm">
-        <div class="bilan-content">
-          <div class="personal-info">
-            <h3>Informations personnelles</h3>
-            <div class="form-row">
-              <label for="nom">Nom *</label>
-              <input type="text" id="nom" name="nom" required aria-required="true">
-            </div>
-            <div class="form-row">
-              <label for="prenom">Prénom *</label>
-              <input type="text" id="prenom" name="prenom" required aria-required="true">
-            </div>
-            <div class="form-row">
-              <label for="age">Âge *</label>
-              <input type="number" id="age" name="age" min="1" max="120" required aria-required="true">
-            </div>
-            <div class="form-row">
-              <label for="email">Email *</label>
-              <input type="email" id="email" name="email" required aria-required="true">
-            </div>
-            <div class="form-row">
-              <label for="sexe">Sexe</label>
-              <select id="sexe" name="sexe">
-                <option value="">Choisir</option>
-                <option value="homme">Homme</option>
-                <option value="femme">Femme</option>
-                <option value="autre">Autre</option>
-              </select>
-            </div>
-            <div class="form-row">
-              <label for="taille">Taille (m)</label>
-              <input type="number" id="taille" name="taille" step="0.01" min="0.5" max="3">
-            </div>
-            <div class="form-row">
-              <label for="poids">Poids (Kg)</label>
-              <input type="number" id="poids" name="poids" min="1" max="300">
-            </div>
-            <div class="form-row">
-              <label for="priseCharge">Êtes-vous sous prise en charge médicale ?</label>
-              <select id="priseCharge" name="priseCharge">
-                <option value="">Choisir</option>
-                <option value="oui">Oui</option>
-                <option value="non">Non</option>
-              </select>
-            </div>
-            <div class="form-row">
-              <label for="medicaments">Si oui, quels médicaments prenez-vous ou avez-vous pris dernièrement ?</label>
-              <textarea id="medicaments" name="medicaments" rows="3"></textarea>
-            </div>
-            <div class="form-row">
-              <label for="dernierRDV">Votre dernier rendez-vous chez votre médecin traitant</label>
-              <input type="date" id="dernierRDV" name="dernierRDV">
-            </div>
-            <div class="form-row">
-              <label for="symptomes">De quoi aviez-vous souffert récemment ?</label>
-              <textarea id="symptomes" name="symptomes" rows="3"></textarea>
-            </div>
-          </div>
-
-          <h3>1ère partie</h3>
-        <p>Instruction : Répondez à chaque question en cochant la case « oui » ou « non » selon que vous êtes d'accord ou non avec l'énoncé. Si vous hésitez pour une réponse, tenez compte de votre état le plus courant. Par exemple, si vous n'êtes pas en forme aujourd'hui parce que vous avez mal dormi, répondez sur la base de votre condition habituelle.</p>
-
-        <h4>1.A.</h4>
-        <h5>MEMOIRE ET CAPACITE A CONCENTRER SON ATTENTION</h5>
-        <table>
-          <tr><th></th><th>Oui</th><th>Non</th></tr>
-          <tr><td>En général, j'ai les idées claires</td><td><input type="radio" name="q1" value="oui"></td><td><input type="radio" name="q1" value="non"></td></tr>
-          <tr><td>Je me concentre facilement</td><td><input type="radio" name="q2" value="oui"></td><td><input type="radio" name="q2" value="non"></td></tr>
-          <tr><td>Je réfléchis beaucoup.</td><td><input type="radio" name="q3" value="oui"></td><td><input type="radio" name="q3" value="non"></td></tr>
-          <tr><td>J'ai l'esprit rapide</td><td><input type="radio" name="q4" value="oui"></td><td><input type="radio" name="q4" value="non"></td></tr>
-          <tr><td>Je fais tant de choses à la fois que je me disperse.</td><td><input type="radio" name="q5" value="oui"></td><td><input type="radio" name="q5" value="non"></td></tr>
-          <tr><td>J'apprécie les débats animés.</td><td><input type="radio" name="q6" value="oui"></td><td><input type="radio" name="q6" value="non"></td></tr>
-          <tr><td>J'ai beaucoup d'imagination</td><td><input type="radio" name="q7" value="oui"></td><td><input type="radio" name="q7" value="non"></td></tr>
-          <tr><td>Je suis facilement critique envers moi-même</td><td><input type="radio" name="q8" value="oui"></td><td><input type="radio" name="q8" value="non"></td></tr>
-        </table>
-        <div class="total-row">
-          <label>NOMBRE TOTAL DE OUI (Mémoire)</label>
-          <input type="number" id="totalMemoire" readonly>
-        </div>
-
-        <h5>CONDITION PHYSIQUE</h5>
-        <table>
-          <tr><th></th><th>Oui</th><th>Non</th></tr>
-          <tr><td>La plupart du temps, j'ai beaucoup d'énergie.</td><td><input type="radio" name="q9" value="oui"></td><td><input type="radio" name="q9" value="non"></td></tr>
-          <tr><td>J'ai souvent une tension artérielle élevée.</td><td><input type="radio" name="q10" value="oui"></td><td><input type="radio" name="q10" value="non"></td></tr>
-          <tr><td>J'ai connu des périodes où je débordais d'énergie.</td><td><input type="radio" name="q11" value="oui"></td><td><input type="radio" name="q11" value="non"></td></tr>
-          <tr><td>Je suis insomniaque.</td><td><input type="radio" name="q12" value="oui"></td><td><input type="radio" name="q12" value="non"></td></tr>
-          <tr><td>Bouger me revigore</td><td><input type="radio" name="q13" value="oui"></td><td><input type="radio" name="q13" value="non"></td></tr>
-          <tr><td>Je n'ai généralement pas besoin de café pour démarrer le matin</td><td><input type="radio" name="q14" value="oui"></td><td><input type="radio" name="q14" value="non"></td></tr>
-          <tr><td>Mes veines sont extrêmement visibles</td><td><input type="radio" name="q15" value="oui"></td><td><input type="radio" name="q15" value="non"></td></tr>
-          <tr><td>Ma température corporelle est plutôt élevée.</td><td><input type="radio" name="q16" value="oui"></td><td><input type="radio" name="q16" value="non"></td></tr>
-          <tr><td>Je ne m'arrête pas de travailler quand je mange</td><td><input type="radio" name="q17" value="oui"></td><td><input type="radio" name="q17" value="non"></td></tr>
-          <tr><td>Je fais l'amour dès que l'occasion s'en présente</td><td><input type="radio" name="q18" value="oui"></td><td><input type="radio" name="q18" value="non"></td></tr>
-          <tr><td>Je suis soupe au lait</td><td><input type="radio" name="q19" value="oui"></td><td><input type="radio" name="q19" value="non"></td></tr>
-          <tr><td>Je mange uniquement parce qu'il le faut.</td><td><input type="radio" name="q20" value="oui"></td><td><input type="radio" name="q20" value="non"></td></tr>
-          <tr><td>J'aime les films d'action.</td><td><input type="radio" name="q21" value="oui"></td><td><input type="radio" name="q21" value="non"></td></tr>
-          <tr><td>Je me sens en pleine forme après avoir fait de l'exercice.</td><td><input type="radio" name="q22" value="oui"></td><td><input type="radio" name="q22" value="non"></td></tr>
-        </table>
-        <div class="total-row">
-          <label>NOMBRE TOTAL DE OUI (Condition Physique)</label>
-          <input type="number" id="totalPhysique" readonly>
-        </div>
-
-        <h5>PERSONNALITE</h5>
-        <table>
-          <tr><th></th><th>Oui</th><th>Non</th></tr>
-          <tr><td>Je suis dominateur</td><td><input type="radio" name="q23" value="oui"></td><td><input type="radio" name="q23" value="non"></td></tr>
-          <tr><td>Je n'ai pas toujours conscience de ce jour</td><td><input type="radio" name="q24" value="oui"></td><td><input type="radio" name="q24" value="non"></td></tr>
-          <tr><td>J'ai souvent du mal à écouter les autres car j'ai tendance à vouloir imposer mes idées.</td><td><input type="radio" name="q25" value="oui"></td><td><input type="radio" name="q25" value="non"></td></tr>
-          <tr><td>J'ai été plus d'une fois mêlé à des bagarres.</td><td><input type="radio" name="q26" value="oui"></td><td><input type="radio" name="q26" value="non"></td></tr>
-          <tr><td>Je regarde plutôt vers l'avenir.</td><td><input type="radio" name="q27" value="oui"></td><td><input type="radio" name="q27" value="non"></td></tr>
-          <tr><td>Parfois, j'échafaude des théories.</td><td><input type="radio" name="q28" value="oui"></td><td><input type="radio" name="q28" value="non"></td></tr>
-          <tr><td>Les autres me voient plutôt comme un cérébral.</td><td><input type="radio" name="q29" value="oui"></td><td><input type="radio" name="q29" value="non"></td></tr>
-          <tr><td>Je suis porté au rêve et au fantasme.</td><td><input type="radio" name="q30" value="oui"></td><td><input type="radio" name="q30" value="non"></td></tr>
-          <tr><td>J'aime les livres d'histoires et autres ouvrages documentaires.</td><td><input type="radio" name="q31" value="oui"></td><td><input type="radio" name="q31" value="non"></td></tr>
-          <tr><td>J'admire les gens ingénieux</td><td><input type="radio" name="q32" value="oui"></td><td><input type="radio" name="q32" value="non"></td></tr>
-          <tr><td>J'ai parfois du mal à voir venir les gens qui feront des histoires</td><td><input type="radio" name="q33" value="oui"></td><td><input type="radio" name="q33" value="non"></td></tr>
-          <tr><td>En principe, je ne me laisse pas avoir par ceux qui demandent mon aide.</td><td><input type="radio" name="q34" value="oui"></td><td><input type="radio" name="q34" value="non"></td></tr>
-          <tr><td>Les autres me voient plutôt comme un esprit novateur.</td><td><input type="radio" name="q35" value="oui"></td><td><input type="radio" name="q35" value="non"></td></tr>
-          <tr><td>On trouve parfois que j'ai de drôles d'idées, mais je peux toujours les justifier.</td><td><input type="radio" name="q36" value="oui"></td><td><input type="radio" name="q36" value="non"></td></tr>
-          <tr><td>Je suis souvent agité ou irrité.</td><td><input type="radio" name="q37" value="oui"></td><td><input type="radio" name="q37" value="non"></td></tr>
-          <tr><td>Un rien me contrarie ou me rend anxieux.</td><td><input type="radio" name="q38" value="oui"></td><td><input type="radio" name="q38" value="non"></td></tr>
-          <tr><td>J'ai des fantasmes de toute puissance.</td><td><input type="radio" name="q39" value="oui"></td><td><input type="radio" name="q39" value="non"></td></tr>
-          <tr><td>J'adore dépenser de l'argent.</td><td><input type="radio" name="q40" value="oui"></td><td><input type="radio" name="q40" value="non"></td></tr>
-          <tr><td>Dans mes relations avec les autres, j'aime bien dormir</td><td><input type="radio" name="q41" value="oui"></td><td><input type="radio" name="q41" value="non"></td></tr>
-          <tr><td>Je suis très dur avec moi-même.</td><td><input type="radio" name="q42" value="oui"></td><td><input type="radio" name="q42" value="non"></td></tr>
-          <tr><td>Je réagis agressivement à la critique et suis facilement sur la défensive.</td><td><input type="radio" name="q43" value="oui"></td><td><input type="radio" name="q43" value="non"></td></tr>
-        </table>
-        <div class="total-row">
-          <label>NOMBRE TOTAL DE OUI (Personnalité)</label>
-          <input type="number" id="totalPersonnalite" readonly>
-        </div>
-
-        <h5>TRAITS DE CARACTERE</h5>
-        <table>
-          <tr><th></th><th>Oui</th><th>Non</th></tr>
-          <tr><td>Certains trouvent que j'ai la tête dure.</td><td><input type="radio" name="q44" value="oui"></td><td><input type="radio" name="q44" value="non"></td></tr>
-          <tr><td>La plupart des gens me voient comme quelqu'un qui va au bout de ce qu'il entreprend</td><td><input type="radio" name="q45" value="oui"></td><td><input type="radio" name="q45" value="non"></td></tr>
-          <tr><td>Pour certains, je suis irrationnel.</td><td><input type="radio" name="q46" value="oui"></td><td><input type="radio" name="q46" value="non"></td></tr>
-          <tr><td>Je suis prêt à tout pour atteindre mon but.</td><td><input type="radio" name="q47" value="oui"></td><td><input type="radio" name="q47" value="non"></td></tr>
-          <tr><td>La religion m'intéresse</td><td><input type="radio" name="q48" value="oui"></td><td><input type="radio" name="q48" value="non"></td></tr>
-          <tr><td>L'incompétence me met en colère.</td><td><input type="radio" name="q49" value="oui"></td><td><input type="radio" name="q49" value="non"></td></tr>
-          <tr><td>Je suis exigent envers moi comme envers les autres.</td><td><input type="radio" name="q50" value="oui"></td><td><input type="radio" name="q50" value="non"></td></tr>
-          <tr><td>NOMBRE TOTAL DE OUI (Traits de Caractère)</td><td><input type="number" id="totalTraits" readonly></td></tr>
-        </table>
-
-        <div style="margin-top: 2rem; text-align: center;">
-          <button type="button" id="btn-reset" class="btn-submit" style="background: #dc3545; margin-right: 1rem;">Réinitialiser</button>
-          <button type="submit" class="btn-submit">Soumettre le bilan</button>
-        </div>
-      </form>
-    </section>
-
-    <!-- Témoignages -->
-    <section id="temoignages-section" class="hidden" role="region" aria-labelledby="temoignages-heading">
-      <h2 id="temoignages-heading">Témoignages</h2>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <blockquote>"Le Dr. Degla a transformé ma vie avec son approche personnalisée basée sur les neurosciences."</blockquote>
-          <div class="testimonial-author">Marie L., 45 ans</div>
-        </div>
-        <div class="testimonial-card">
-          <blockquote>"Un professionnel exceptionnel, je recommande vivement ses méthodes de coaching."</blockquote>
-          <div class="testimonial-author">Paul K., 52 ans</div>
-        </div>
-        <div class="testimonial-card">
-          <blockquote>"Grâce à ses conseils, j'ai amélioré ma mémoire et ma concentration de façon spectaculaire."</blockquote>
-          <div class="testimonial-author">Sophie M., 38 ans</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Espace Client -->
-    <section id="espace-client-section" class="hidden" role="region" aria-labelledby="espace-client-heading">
-      <h2 id="espace-client-heading">Espace Client</h2>
-      <div class="client-space-content">
-        <div id="login-form-container">
-          <div class="login-form">
-            <h3><i class="fas fa-user-circle"></i> Connexion à votre espace</h3>
-            <form id="loginForm">
-              <div class="form-group">
-                <label for="username"><i class="fas fa-envelope"></i> Email</label>
-                <input type="email" id="username" name="username" required>
-              </div>
-              <div class="form-group">
-                <label for="password"><i class="fas fa-lock"></i> Mot de passe</label>
-                <input type="password" id="password" name="password" required>
-              </div>
-              <button type="submit" class="btn-submit"><i class="fas fa-sign-in-alt"></i> Se connecter</button>
-            </form>
-            <p class="forgot-password"><a href="#"><i class="fas fa-key"></i> Mot de passe oublié ?</a></p>
-            <p class="register-link">Pas encore de compte ? <button id="show-register-btn" class="btn-link"><i class="fas fa-user-plus"></i> S'inscrire</button></p>
-          </div>
-        </div>
-        <div id="register-form-container" class="hidden">
-          <div class="register-form">
-            <h3><i class="fas fa-user-plus"></i> Créer un compte</h3>
-            <form id="registerForm">
-              <div class="form-group">
-                <label for="reg-name"><i class="fas fa-user"></i> Nom complet</label>
-                <input type="text" id="reg-name" name="name" required>
-              </div>
-              <div class="form-group">
-                <label for="reg-email"><i class="fas fa-envelope"></i> Email</label>
-                <input type="email" id="reg-email" name="email" required>
-              </div>
-              <div class="form-group">
-                <label for="reg-password"><i class="fas fa-lock"></i> Mot de passe</label>
-                <input type="password" id="reg-password" name="password" required minlength="6">
-              </div>
-              <div class="form-group">
-                <label for="reg-confirm-password"><i class="fas fa-lock"></i> Confirmer le mot de passe</label>
-                <input type="password" id="reg-confirm-password" name="confirmPassword" required minlength="6">
-              </div>
-              <button type="submit" class="btn-submit"><i class="fas fa-user-plus"></i> Créer le compte</button>
-            </form>
-            <p class="login-link">Déjà un compte ? <button id="show-login-btn" class="btn-link"><i class="fas fa-sign-in-alt"></i> Se connecter</button></p>
-          </div>
-        </div>
-        <div class="client-features">
-          <h3><i class="fas fa-lock-open"></i> Accès réservé</h3>
-          <ul>
-            <li><i class="fas fa-notes-medical"></i> Suivi de vos consultations</li>
-            <li><i class="fas fa-file-medical-alt"></i> Résultats de vos bilans</li>
-            <li><i class="fas fa-book"></i> Ressources exclusives</li>
-            <li><i class="fas fa-history"></i> Historique de vos séances</li>
-          </ul>
-          <button id="logoutBtn" class="btn-logout hidden"><i class="fas fa-sign-out-alt"></i> Déconnexion</button>
-        </div>
-        <div id="client-dashboard" class="hidden">
-          <h3>Bienvenue, <span id="client-name"></span></h3>
-          <p>Voici votre tableau de bord personnalisé.</p>
-          <!-- Contenu dynamique à ajouter -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact-section" class="hidden" role="region" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Contactez-nous</h2>
-      <div class="contact-container">
-        <div class="contact-form">
-          <h3>Envoyez-nous un message</h3>
-          <form id="contactForm">
-            <div class="form-group">
-              <label for="name">Nom complet *</label>
-              <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email *</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-              <label for="phone">Téléphone</label>
-              <input type="tel" id="phone" name="phone">
-            </div>
-            <div class="form-group">
-              <label for="subject">Sujet</label>
-              <select id="subject" name="subject">
-                <option value="">Choisissez un sujet</option>
-                <option value="consultation">Demande de consultation</option>
-                <option value="bilan">Bilan cognitif</option>
-                <option value="coaching">Coaching en neuroscience</option>
-                <option value="formation">Formation</option>
-                <option value="autre">Autre</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Message *</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn-submit">Envoyer le message</button>
-          </form>
-        </div>
-        <div class="contact-info">
-          <h3>Informations de contact</h3>
-          <div class="info-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <div>
-              <strong>Adresse</strong><br>
-              Cabinet Lucie International<br>
-              123 Avenue de la Santé<br>
-              75000 Paris, France
-            </div>
-          </div>
-          <div class="info-item">
-            <i class="fas fa-phone"></i>
-            <div>
-              <strong>Téléphone</strong><br>
-              <a href="tel:+2290196964648">+229 01 96 96 4648</a><br>
-              <a href="tel:+2290163906162">+229 01 63 90 6162</a><br>
-              <a href="tel:+2290191493636">+229 01 91 49 3636</a><br>
-              <a href="tel:+2290142166862">+229 01 42 16 6862</a><br>
-              <a href="tel:+33758387534">+33 7 58 38 75 34</a>
-            </div>
-          </div>
-          <div class="info-item">
-            <i class="fas fa-envelope"></i>
-            <div>
-              <strong>Email</strong><br>
-              contact@cabinetlucie.com<br>
-              info@cabinetlucie.com
-            </div>
-          </div>
-          <div class="info-item">
-            <i class="fas fa-clock"></i>
-            <div>
-              <strong>Horaires d'ouverture</strong><br>
-              Lundi - Vendredi: 9h00 - 18h00<br>
-              Samedi: 9h00 - 12h00<br>
-              Dimanche: Fermé
-            </div>
-          </div>
-          <div class="social-media">
-            <h4>Suivez-nous</h4>
-            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="map-container">
-        <h3>Notre localisation</h3>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.292292615674389!3d48.85837360866272!2m3!1f0!2f0!3f0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1640992800000!5m2!1sfr!2sfr"
-          width="100%"
-          height="300"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-    </section>
-  </main>
-
-  <script src="translations.js"></script>
+  <div id="toast" class="toast"></div>
   <script src="script.js"></script>
 </body>
 </html>
